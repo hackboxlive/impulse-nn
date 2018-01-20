@@ -1,0 +1,3 @@
+/home/shakti/Coding/github/impulse-nn/CMakeFiles/rebuild_cache.dir
+/home/shakti/Coding/github/impulse-nn/CMakeFiles/impulse.dir
+/home/shakti/Coding/github/impulse-nn/CMakeFiles/edit_cache.dir

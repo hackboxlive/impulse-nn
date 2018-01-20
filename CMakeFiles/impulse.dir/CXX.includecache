@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/shakti/Coding/github/impulse-nn/include/neuron.hpp
+iostream
+-
+
+/home/shakti/Coding/github/impulse-nn/src/main.cpp
+iostream
+-
+../include/neuron.hpp
+/home/shakti/Coding/github/impulse-nn/include/neuron.hpp
+
+/home/shakti/Coding/github/impulse-nn/src/neuron.cpp
+iostream
+-
+cmath
+-
+../include/neuron.hpp
+/home/shakti/Coding/github/impulse-nn/include/neuron.hpp
+
