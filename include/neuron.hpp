@@ -9,6 +9,8 @@ class neuron	{
 	public:
 		neuron(double val);
 		
+		void set_val(double val);
+
 		void activate();
 		
 		void derivative();
