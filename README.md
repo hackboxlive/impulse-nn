@@ -2,6 +2,12 @@
 
 A artificial neural network library written in C++14, written from scratch. Currently, it trains on a feed-forward network, which to my surprise, works fine. The activating function here used is the fast sigmoid function, and the derivative function is also of the same.
 
+## How to run?
+
+Use the command `./impulse` to run the project. You can build the project by using `make` command while in the project directory.
+
+(I don't know much about it :p)
+
 ## What did it teach me?
 
 1. I knew about feed-forward neural nets. But never thought implementing them would be such a pain. A lot of hours in debugging taught me to write cleaner code.
