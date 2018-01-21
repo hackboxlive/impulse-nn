@@ -1,1 +1,1 @@
-/usr/bin/c++   -std=c++14 -g  -rdynamic CMakeFiles/impulse.dir/src/main.cpp.o CMakeFiles/impulse.dir/src/neuron.cpp.o  -o impulse 
+/usr/bin/c++   -std=c++14 -g  -rdynamic CMakeFiles/impulse.dir/src/main.cpp.o CMakeFiles/impulse.dir/src/neuron.cpp.o CMakeFiles/impulse.dir/src/matrix.cpp.o CMakeFiles/impulse.dir/src/layer.cpp.o CMakeFiles/impulse.dir/src/network.cpp.o  -o impulse 

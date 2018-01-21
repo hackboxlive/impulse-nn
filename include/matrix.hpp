@@ -14,9 +14,13 @@ class matrix	{
 
 		matrix *transpose();
 
-		void set_value(int r,int c,int v);
+		void set_value(int r,int c,double v)	{
+			this->mat[r][c] = v;
+		}
 
-		double get_value(int r,int c);
+		double get_value(int r,int c)	{
+			return this->mat[r][c];
+		}
 
 		void print_mat();
 

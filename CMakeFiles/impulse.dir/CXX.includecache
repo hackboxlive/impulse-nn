@@ -6,15 +6,57 @@
 
 #IncludeRegexTransform: 
 
+/home/shakti/Coding/github/impulse-nn/include/layer.hpp
+iostream
+-
+vector
+-
+neuron.hpp
+/home/shakti/Coding/github/impulse-nn/include/neuron.hpp
+matrix.hpp
+/home/shakti/Coding/github/impulse-nn/include/matrix.hpp
+
+/home/shakti/Coding/github/impulse-nn/include/matrix.hpp
+iostream
+-
+vector
+-
+random
+-
+
+/home/shakti/Coding/github/impulse-nn/include/network.hpp
+iostream
+-
+matrix.hpp
+/home/shakti/Coding/github/impulse-nn/include/matrix.hpp
+layer.hpp
+/home/shakti/Coding/github/impulse-nn/include/layer.hpp
+
 /home/shakti/Coding/github/impulse-nn/include/neuron.hpp
 iostream
 -
+
+/home/shakti/Coding/github/impulse-nn/src/layer.cpp
+../include/layer.hpp
+/home/shakti/Coding/github/impulse-nn/include/layer.hpp
 
 /home/shakti/Coding/github/impulse-nn/src/main.cpp
 iostream
 -
 ../include/neuron.hpp
 /home/shakti/Coding/github/impulse-nn/include/neuron.hpp
+../include/matrix.hpp
+/home/shakti/Coding/github/impulse-nn/include/matrix.hpp
+../include/network.hpp
+/home/shakti/Coding/github/impulse-nn/include/network.hpp
+
+/home/shakti/Coding/github/impulse-nn/src/matrix.cpp
+../include/matrix.hpp
+/home/shakti/Coding/github/impulse-nn/include/matrix.hpp
+
+/home/shakti/Coding/github/impulse-nn/src/network.cpp
+../include/network.hpp
+/home/shakti/Coding/github/impulse-nn/include/network.hpp
 
 /home/shakti/Coding/github/impulse-nn/src/neuron.cpp
 iostream

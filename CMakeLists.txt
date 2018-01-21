@@ -9,4 +9,7 @@ add_executable(
 	impulse
 	src/main.cpp
 	src/neuron.cpp
+	src/matrix.cpp
+	src/layer.cpp
+	src/network.cpp
 )

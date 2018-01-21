@@ -1,6 +1,9 @@
 file(REMOVE_RECURSE
   "CMakeFiles/impulse.dir/src/main.cpp.o"
   "CMakeFiles/impulse.dir/src/neuron.cpp.o"
+  "CMakeFiles/impulse.dir/src/matrix.cpp.o"
+  "CMakeFiles/impulse.dir/src/layer.cpp.o"
+  "CMakeFiles/impulse.dir/src/network.cpp.o"
   "impulse.pdb"
   "impulse"
 )

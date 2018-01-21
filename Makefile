@@ -123,6 +123,33 @@ impulse/fast:
 	$(MAKE) -f CMakeFiles/impulse.dir/build.make CMakeFiles/impulse.dir/build
 .PHONY : impulse/fast
 
+src/layer.o: src/layer.cpp.o
+
+.PHONY : src/layer.o
+
+# target to build an object file
+src/layer.cpp.o:
+	$(MAKE) -f CMakeFiles/impulse.dir/build.make CMakeFiles/impulse.dir/src/layer.cpp.o
+.PHONY : src/layer.cpp.o
+
+src/layer.i: src/layer.cpp.i
+
+.PHONY : src/layer.i
+
+# target to preprocess a source file
+src/layer.cpp.i:
+	$(MAKE) -f CMakeFiles/impulse.dir/build.make CMakeFiles/impulse.dir/src/layer.cpp.i
+.PHONY : src/layer.cpp.i
+
+src/layer.s: src/layer.cpp.s
+
+.PHONY : src/layer.s
+
+# target to generate assembly for a file
+src/layer.cpp.s:
+	$(MAKE) -f CMakeFiles/impulse.dir/build.make CMakeFiles/impulse.dir/src/layer.cpp.s
+.PHONY : src/layer.cpp.s
+
 src/main.o: src/main.cpp.o
 
 .PHONY : src/main.o
@@ -149,6 +176,60 @@ src/main.s: src/main.cpp.s
 src/main.cpp.s:
 	$(MAKE) -f CMakeFiles/impulse.dir/build.make CMakeFiles/impulse.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
+
+src/matrix.o: src/matrix.cpp.o
+
+.PHONY : src/matrix.o
+
+# target to build an object file
+src/matrix.cpp.o:
+	$(MAKE) -f CMakeFiles/impulse.dir/build.make CMakeFiles/impulse.dir/src/matrix.cpp.o
+.PHONY : src/matrix.cpp.o
+
+src/matrix.i: src/matrix.cpp.i
+
+.PHONY : src/matrix.i
+
+# target to preprocess a source file
+src/matrix.cpp.i:
+	$(MAKE) -f CMakeFiles/impulse.dir/build.make CMakeFiles/impulse.dir/src/matrix.cpp.i
+.PHONY : src/matrix.cpp.i
+
+src/matrix.s: src/matrix.cpp.s
+
+.PHONY : src/matrix.s
+
+# target to generate assembly for a file
+src/matrix.cpp.s:
+	$(MAKE) -f CMakeFiles/impulse.dir/build.make CMakeFiles/impulse.dir/src/matrix.cpp.s
+.PHONY : src/matrix.cpp.s
+
+src/network.o: src/network.cpp.o
+
+.PHONY : src/network.o
+
+# target to build an object file
+src/network.cpp.o:
+	$(MAKE) -f CMakeFiles/impulse.dir/build.make CMakeFiles/impulse.dir/src/network.cpp.o
+.PHONY : src/network.cpp.o
+
+src/network.i: src/network.cpp.i
+
+.PHONY : src/network.i
+
+# target to preprocess a source file
+src/network.cpp.i:
+	$(MAKE) -f CMakeFiles/impulse.dir/build.make CMakeFiles/impulse.dir/src/network.cpp.i
+.PHONY : src/network.cpp.i
+
+src/network.s: src/network.cpp.s
+
+.PHONY : src/network.s
+
+# target to generate assembly for a file
+src/network.cpp.s:
+	$(MAKE) -f CMakeFiles/impulse.dir/build.make CMakeFiles/impulse.dir/src/network.cpp.s
+.PHONY : src/network.cpp.s
 
 src/neuron.o: src/neuron.cpp.o
 
@@ -186,9 +267,18 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... impulse"
 	@echo "... edit_cache"
+	@echo "... src/layer.o"
+	@echo "... src/layer.i"
+	@echo "... src/layer.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/matrix.o"
+	@echo "... src/matrix.i"
+	@echo "... src/matrix.s"
+	@echo "... src/network.o"
+	@echo "... src/network.i"
+	@echo "... src/network.s"
 	@echo "... src/neuron.o"
 	@echo "... src/neuron.i"
 	@echo "... src/neuron.s"

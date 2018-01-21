@@ -105,19 +105,97 @@ CMakeFiles/impulse.dir/src/neuron.cpp.o.provides: CMakeFiles/impulse.dir/src/neu
 CMakeFiles/impulse.dir/src/neuron.cpp.o.provides.build: CMakeFiles/impulse.dir/src/neuron.cpp.o
 
 
+CMakeFiles/impulse.dir/src/matrix.cpp.o: CMakeFiles/impulse.dir/flags.make
+CMakeFiles/impulse.dir/src/matrix.cpp.o: src/matrix.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shakti/Coding/github/impulse-nn/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/impulse.dir/src/matrix.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/impulse.dir/src/matrix.cpp.o -c /home/shakti/Coding/github/impulse-nn/src/matrix.cpp
+
+CMakeFiles/impulse.dir/src/matrix.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/impulse.dir/src/matrix.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shakti/Coding/github/impulse-nn/src/matrix.cpp > CMakeFiles/impulse.dir/src/matrix.cpp.i
+
+CMakeFiles/impulse.dir/src/matrix.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/impulse.dir/src/matrix.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shakti/Coding/github/impulse-nn/src/matrix.cpp -o CMakeFiles/impulse.dir/src/matrix.cpp.s
+
+CMakeFiles/impulse.dir/src/matrix.cpp.o.requires:
+
+.PHONY : CMakeFiles/impulse.dir/src/matrix.cpp.o.requires
+
+CMakeFiles/impulse.dir/src/matrix.cpp.o.provides: CMakeFiles/impulse.dir/src/matrix.cpp.o.requires
+	$(MAKE) -f CMakeFiles/impulse.dir/build.make CMakeFiles/impulse.dir/src/matrix.cpp.o.provides.build
+.PHONY : CMakeFiles/impulse.dir/src/matrix.cpp.o.provides
+
+CMakeFiles/impulse.dir/src/matrix.cpp.o.provides.build: CMakeFiles/impulse.dir/src/matrix.cpp.o
+
+
+CMakeFiles/impulse.dir/src/layer.cpp.o: CMakeFiles/impulse.dir/flags.make
+CMakeFiles/impulse.dir/src/layer.cpp.o: src/layer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shakti/Coding/github/impulse-nn/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/impulse.dir/src/layer.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/impulse.dir/src/layer.cpp.o -c /home/shakti/Coding/github/impulse-nn/src/layer.cpp
+
+CMakeFiles/impulse.dir/src/layer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/impulse.dir/src/layer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shakti/Coding/github/impulse-nn/src/layer.cpp > CMakeFiles/impulse.dir/src/layer.cpp.i
+
+CMakeFiles/impulse.dir/src/layer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/impulse.dir/src/layer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shakti/Coding/github/impulse-nn/src/layer.cpp -o CMakeFiles/impulse.dir/src/layer.cpp.s
+
+CMakeFiles/impulse.dir/src/layer.cpp.o.requires:
+
+.PHONY : CMakeFiles/impulse.dir/src/layer.cpp.o.requires
+
+CMakeFiles/impulse.dir/src/layer.cpp.o.provides: CMakeFiles/impulse.dir/src/layer.cpp.o.requires
+	$(MAKE) -f CMakeFiles/impulse.dir/build.make CMakeFiles/impulse.dir/src/layer.cpp.o.provides.build
+.PHONY : CMakeFiles/impulse.dir/src/layer.cpp.o.provides
+
+CMakeFiles/impulse.dir/src/layer.cpp.o.provides.build: CMakeFiles/impulse.dir/src/layer.cpp.o
+
+
+CMakeFiles/impulse.dir/src/network.cpp.o: CMakeFiles/impulse.dir/flags.make
+CMakeFiles/impulse.dir/src/network.cpp.o: src/network.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shakti/Coding/github/impulse-nn/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/impulse.dir/src/network.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/impulse.dir/src/network.cpp.o -c /home/shakti/Coding/github/impulse-nn/src/network.cpp
+
+CMakeFiles/impulse.dir/src/network.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/impulse.dir/src/network.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shakti/Coding/github/impulse-nn/src/network.cpp > CMakeFiles/impulse.dir/src/network.cpp.i
+
+CMakeFiles/impulse.dir/src/network.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/impulse.dir/src/network.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shakti/Coding/github/impulse-nn/src/network.cpp -o CMakeFiles/impulse.dir/src/network.cpp.s
+
+CMakeFiles/impulse.dir/src/network.cpp.o.requires:
+
+.PHONY : CMakeFiles/impulse.dir/src/network.cpp.o.requires
+
+CMakeFiles/impulse.dir/src/network.cpp.o.provides: CMakeFiles/impulse.dir/src/network.cpp.o.requires
+	$(MAKE) -f CMakeFiles/impulse.dir/build.make CMakeFiles/impulse.dir/src/network.cpp.o.provides.build
+.PHONY : CMakeFiles/impulse.dir/src/network.cpp.o.provides
+
+CMakeFiles/impulse.dir/src/network.cpp.o.provides.build: CMakeFiles/impulse.dir/src/network.cpp.o
+
+
 # Object files for target impulse
 impulse_OBJECTS = \
 "CMakeFiles/impulse.dir/src/main.cpp.o" \
-"CMakeFiles/impulse.dir/src/neuron.cpp.o"
+"CMakeFiles/impulse.dir/src/neuron.cpp.o" \
+"CMakeFiles/impulse.dir/src/matrix.cpp.o" \
+"CMakeFiles/impulse.dir/src/layer.cpp.o" \
+"CMakeFiles/impulse.dir/src/network.cpp.o"
 
 # External object files for target impulse
 impulse_EXTERNAL_OBJECTS =
 
 impulse: CMakeFiles/impulse.dir/src/main.cpp.o
 impulse: CMakeFiles/impulse.dir/src/neuron.cpp.o
+impulse: CMakeFiles/impulse.dir/src/matrix.cpp.o
+impulse: CMakeFiles/impulse.dir/src/layer.cpp.o
+impulse: CMakeFiles/impulse.dir/src/network.cpp.o
 impulse: CMakeFiles/impulse.dir/build.make
 impulse: CMakeFiles/impulse.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/shakti/Coding/github/impulse-nn/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable impulse"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/shakti/Coding/github/impulse-nn/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable impulse"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/impulse.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -127,6 +205,9 @@ CMakeFiles/impulse.dir/build: impulse
 
 CMakeFiles/impulse.dir/requires: CMakeFiles/impulse.dir/src/main.cpp.o.requires
 CMakeFiles/impulse.dir/requires: CMakeFiles/impulse.dir/src/neuron.cpp.o.requires
+CMakeFiles/impulse.dir/requires: CMakeFiles/impulse.dir/src/matrix.cpp.o.requires
+CMakeFiles/impulse.dir/requires: CMakeFiles/impulse.dir/src/layer.cpp.o.requires
+CMakeFiles/impulse.dir/requires: CMakeFiles/impulse.dir/src/network.cpp.o.requires
 
 .PHONY : CMakeFiles/impulse.dir/requires
 

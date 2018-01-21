@@ -12,8 +12,15 @@ class network	{
 	public:
 
 		network(vector<int> topology);
+		void set_input(vector<double> input);
+		void print_network();
 
 	private:
+		int size;
 
+		vector<int> topology;
+		vector<layer *> layers;
+		vector<matrix *> weights;
+		vector<double> input;
 };
 #endif
