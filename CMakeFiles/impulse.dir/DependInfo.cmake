@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/shakti/Coding/github/impulse-nn/src/matrix.cpp" "/home/shakti/Coding/github/impulse-nn/CMakeFiles/impulse.dir/src/matrix.cpp.o"
   "/home/shakti/Coding/github/impulse-nn/src/network.cpp" "/home/shakti/Coding/github/impulse-nn/CMakeFiles/impulse.dir/src/network.cpp.o"
   "/home/shakti/Coding/github/impulse-nn/src/neuron.cpp" "/home/shakti/Coding/github/impulse-nn/CMakeFiles/impulse.dir/src/neuron.cpp.o"
+  "/home/shakti/Coding/github/impulse-nn/src/utils/matrix_multiplication.cpp" "/home/shakti/Coding/github/impulse-nn/CMakeFiles/impulse.dir/src/utils/matrix_multiplication.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

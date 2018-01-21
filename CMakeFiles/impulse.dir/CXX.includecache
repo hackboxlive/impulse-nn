@@ -27,14 +27,30 @@ random
 /home/shakti/Coding/github/impulse-nn/include/network.hpp
 iostream
 -
+vector
+-
 matrix.hpp
 /home/shakti/Coding/github/impulse-nn/include/matrix.hpp
 layer.hpp
 /home/shakti/Coding/github/impulse-nn/include/layer.hpp
+utils/matrix_multiplication.hpp
+/home/shakti/Coding/github/impulse-nn/include/utils/matrix_multiplication.hpp
 
 /home/shakti/Coding/github/impulse-nn/include/neuron.hpp
 iostream
 -
+cmath
+-
+
+/home/shakti/Coding/github/impulse-nn/include/utils/matrix_multiplication.hpp
+iostream
+-
+vector
+-
+assert.h
+-
+../matrix.hpp
+/home/shakti/Coding/github/impulse-nn/include/matrix.hpp
 
 /home/shakti/Coding/github/impulse-nn/src/layer.cpp
 ../include/layer.hpp
@@ -59,10 +75,10 @@ iostream
 /home/shakti/Coding/github/impulse-nn/include/network.hpp
 
 /home/shakti/Coding/github/impulse-nn/src/neuron.cpp
-iostream
--
-cmath
--
 ../include/neuron.hpp
 /home/shakti/Coding/github/impulse-nn/include/neuron.hpp
+
+/home/shakti/Coding/github/impulse-nn/src/utils/matrix_multiplication.cpp
+../../include/utils/matrix_multiplication.hpp
+/home/shakti/Coding/github/impulse-nn/include/utils/matrix_multiplication.hpp
 

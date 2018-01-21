@@ -2,6 +2,8 @@
 #define _NEURON_HPP_
 
 #include <iostream>
+#include <cmath>
+
 using namespace std;
 
 class neuron	{

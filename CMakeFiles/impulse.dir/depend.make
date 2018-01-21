@@ -10,6 +10,7 @@ CMakeFiles/impulse.dir/src/main.cpp.o: include/layer.hpp
 CMakeFiles/impulse.dir/src/main.cpp.o: include/matrix.hpp
 CMakeFiles/impulse.dir/src/main.cpp.o: include/network.hpp
 CMakeFiles/impulse.dir/src/main.cpp.o: include/neuron.hpp
+CMakeFiles/impulse.dir/src/main.cpp.o: include/utils/matrix_multiplication.hpp
 CMakeFiles/impulse.dir/src/main.cpp.o: src/main.cpp
 
 CMakeFiles/impulse.dir/src/matrix.cpp.o: include/matrix.hpp
@@ -19,8 +20,13 @@ CMakeFiles/impulse.dir/src/network.cpp.o: include/layer.hpp
 CMakeFiles/impulse.dir/src/network.cpp.o: include/matrix.hpp
 CMakeFiles/impulse.dir/src/network.cpp.o: include/network.hpp
 CMakeFiles/impulse.dir/src/network.cpp.o: include/neuron.hpp
+CMakeFiles/impulse.dir/src/network.cpp.o: include/utils/matrix_multiplication.hpp
 CMakeFiles/impulse.dir/src/network.cpp.o: src/network.cpp
 
 CMakeFiles/impulse.dir/src/neuron.cpp.o: include/neuron.hpp
 CMakeFiles/impulse.dir/src/neuron.cpp.o: src/neuron.cpp
+
+CMakeFiles/impulse.dir/src/utils/matrix_multiplication.cpp.o: include/matrix.hpp
+CMakeFiles/impulse.dir/src/utils/matrix_multiplication.cpp.o: include/utils/matrix_multiplication.hpp
+CMakeFiles/impulse.dir/src/utils/matrix_multiplication.cpp.o: src/utils/matrix_multiplication.cpp
 

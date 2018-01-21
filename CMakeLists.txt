@@ -12,4 +12,5 @@ add_executable(
 	src/matrix.cpp
 	src/layer.cpp
 	src/network.cpp
+	src/utils/matrix_multiplication.cpp
 )

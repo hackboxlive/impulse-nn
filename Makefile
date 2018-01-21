@@ -258,6 +258,33 @@ src/neuron.cpp.s:
 	$(MAKE) -f CMakeFiles/impulse.dir/build.make CMakeFiles/impulse.dir/src/neuron.cpp.s
 .PHONY : src/neuron.cpp.s
 
+src/utils/matrix_multiplication.o: src/utils/matrix_multiplication.cpp.o
+
+.PHONY : src/utils/matrix_multiplication.o
+
+# target to build an object file
+src/utils/matrix_multiplication.cpp.o:
+	$(MAKE) -f CMakeFiles/impulse.dir/build.make CMakeFiles/impulse.dir/src/utils/matrix_multiplication.cpp.o
+.PHONY : src/utils/matrix_multiplication.cpp.o
+
+src/utils/matrix_multiplication.i: src/utils/matrix_multiplication.cpp.i
+
+.PHONY : src/utils/matrix_multiplication.i
+
+# target to preprocess a source file
+src/utils/matrix_multiplication.cpp.i:
+	$(MAKE) -f CMakeFiles/impulse.dir/build.make CMakeFiles/impulse.dir/src/utils/matrix_multiplication.cpp.i
+.PHONY : src/utils/matrix_multiplication.cpp.i
+
+src/utils/matrix_multiplication.s: src/utils/matrix_multiplication.cpp.s
+
+.PHONY : src/utils/matrix_multiplication.s
+
+# target to generate assembly for a file
+src/utils/matrix_multiplication.cpp.s:
+	$(MAKE) -f CMakeFiles/impulse.dir/build.make CMakeFiles/impulse.dir/src/utils/matrix_multiplication.cpp.s
+.PHONY : src/utils/matrix_multiplication.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -282,6 +309,9 @@ help:
 	@echo "... src/neuron.o"
 	@echo "... src/neuron.i"
 	@echo "... src/neuron.s"
+	@echo "... src/utils/matrix_multiplication.o"
+	@echo "... src/utils/matrix_multiplication.i"
+	@echo "... src/utils/matrix_multiplication.s"
 .PHONY : help
 
 

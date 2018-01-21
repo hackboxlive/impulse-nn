@@ -9,7 +9,7 @@ utils::matrix_multiplication::matrix_multiplication(matrix *a,matrix *b)	{
 		assert(false);
 	}
 
-	this->res = new *matrix(a->get_rows(),b->get_cols,false);
+	this->res = new matrix(a->get_rows(),b->get_cols(),false);
 }
 
 matrix *utils::matrix_multiplication::execute()	{

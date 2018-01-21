@@ -11,6 +11,7 @@ CMakeFiles/impulse.dir/src/main.cpp.o
  /home/shakti/Coding/github/impulse-nn/include/matrix.hpp
  /home/shakti/Coding/github/impulse-nn/include/network.hpp
  /home/shakti/Coding/github/impulse-nn/include/neuron.hpp
+ /home/shakti/Coding/github/impulse-nn/include/utils/matrix_multiplication.hpp
  /home/shakti/Coding/github/impulse-nn/src/main.cpp
 CMakeFiles/impulse.dir/src/matrix.cpp.o
  /home/shakti/Coding/github/impulse-nn/include/matrix.hpp
@@ -20,7 +21,12 @@ CMakeFiles/impulse.dir/src/network.cpp.o
  /home/shakti/Coding/github/impulse-nn/include/matrix.hpp
  /home/shakti/Coding/github/impulse-nn/include/network.hpp
  /home/shakti/Coding/github/impulse-nn/include/neuron.hpp
+ /home/shakti/Coding/github/impulse-nn/include/utils/matrix_multiplication.hpp
  /home/shakti/Coding/github/impulse-nn/src/network.cpp
 CMakeFiles/impulse.dir/src/neuron.cpp.o
  /home/shakti/Coding/github/impulse-nn/include/neuron.hpp
  /home/shakti/Coding/github/impulse-nn/src/neuron.cpp
+CMakeFiles/impulse.dir/src/utils/matrix_multiplication.cpp.o
+ /home/shakti/Coding/github/impulse-nn/include/matrix.hpp
+ /home/shakti/Coding/github/impulse-nn/include/utils/matrix_multiplication.hpp
+ /home/shakti/Coding/github/impulse-nn/src/utils/matrix_multiplication.cpp

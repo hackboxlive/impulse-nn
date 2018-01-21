@@ -4,6 +4,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/impulse.dir/src/matrix.cpp.o"
   "CMakeFiles/impulse.dir/src/layer.cpp.o"
   "CMakeFiles/impulse.dir/src/network.cpp.o"
+  "CMakeFiles/impulse.dir/src/utils/matrix_multiplication.cpp.o"
   "impulse.pdb"
   "impulse"
 )
