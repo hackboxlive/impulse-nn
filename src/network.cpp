@@ -13,6 +13,12 @@ network::network(vector<int> topology)	{
 		matrix *m = new matrix(topology[i], topology[i + 1], true);
 		this->weights.push_back(m);
 	}
+
+	for(int i = 0; i < topology[topology.size() - 1]; i++)	{
+		this->errors.push_back(0.0);
+	}
+
+	this->error = 0.0;
 }
 
 void network::set_input(vector<double> input)	{
@@ -58,4 +64,25 @@ void network::feed_forward()	{
 			this->set_neuron_value(i + 1, j, c->get_value(0,j));
 		}
 	}
+}
+
+void network::set_errors()	{
+	if(this->target.size() == 0)	{
+		cerr << "No target for the neural network" << endl;
+		assert(false);
+	}
+
+	if(this->target.size() != this->layers[this->layers.size() - 1]->get_neurons().size())	{
+		cerr << "Target sie not equal to output layer size\n";
+		assert(false);
+	}
+
+	this->error = 0.0;
+	vector<neuron *> output = this->layers[this->layers.size() - 1]->get_neurons();
+	for(int i = 0; i < target.size(); i++)	{
+		double temp = (output[i]->get_activated_val() - target[i]);
+		this->errors[i] = temp;
+		this->error += temp;
+	}
+	error_history.push_back(this->error);
 }

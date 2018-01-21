@@ -18,6 +18,11 @@ class network	{
 		void set_input(vector<double> input);
 		void print_network();
 		void feed_forward();
+		void set_errors();
+
+		void set_target(vector<double> target)	{
+			this->target = target;
+		}
 
 		matrix *get_neuron_matrix(int id)	{
 			return this->layers[id]->vector_to_matrix();
@@ -39,6 +44,14 @@ class network	{
 			this->layers[id_layer]->set_value(id_neuron, val);
 		}
 
+		double get_total_error()	{
+			return this->error;
+		}
+
+		vector<double> get_error_vector()	{
+			return this->errors;
+		}
+		
 	private:
 		int size;
 
@@ -46,5 +59,10 @@ class network	{
 		vector<layer *> layers;
 		vector<matrix *> weights;
 		vector<double> input;
+		vector<double> errors;
+		double error;
+		vector<double> error_history;
+		vector<double> target;
 };
+
 #endif
