@@ -26,6 +26,14 @@ class matrix	{
 
 		double get_random_number();
 
+		int get_rows()	{
+			return this->rows;
+		}
+
+		int get_cols()	{
+			return this->cols;
+		}
+
 	private:
 		int rows;
 		int cols;
