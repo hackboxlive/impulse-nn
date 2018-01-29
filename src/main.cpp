@@ -12,15 +12,19 @@ int main(int argc, char **argv)	{
 	vector<int> topology;
 	topology.push_back(3);
 	topology.push_back(2);
+	topology.push_back(2);
 	topology.push_back(3);
 
 	network *nn = new network(topology);
 	nn->set_input(input);
 	nn->set_target(input);
-	nn->feed_forward();
-	nn->set_errors();
-	nn->print_network();
 
-	cout << "Total error: " << nn->get_total_error() << endl;
+	for(int i=0;i<1000000;i++)	{
+		cout<<"Epoch: #"<<i<<endl;
+		nn->feed_forward();
+		nn->set_errors();
+		cout<<"Total error = "<<nn->get_total_error()<<endl;
+		nn->back_propagation();
+	}
 	return 0;
 }

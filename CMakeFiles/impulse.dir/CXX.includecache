@@ -29,6 +29,8 @@ iostream
 -
 vector
 -
+algorithm
+-
 matrix.hpp
 /home/shakti/Coding/github/impulse-nn/include/matrix.hpp
 layer.hpp

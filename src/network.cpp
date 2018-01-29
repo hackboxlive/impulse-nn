@@ -128,7 +128,27 @@ void network::back_propagation()	{
 			}
 			derived_gradient->set_value(0, j, sum * activated_hidden->get_value(0, j));
 		}
-
+		matrix *left_neurons;
+		if(i - 1 == 0)	{
+			left_neurons = layers[0]->vector_to_matrix();
+		}
+		else	{
+			left_neurons = layers[i - 1]->vector_to_activated_matrix();
+		}
+		matrix *delta_weights = (new utils::matrix_multiplication(derived_gradient->transpose(), left_neurons))->execute()->transpose();
+		matrix *new_weights_hidden = new matrix(delta_weights->get_rows(), delta_weights->get_cols(), false);
+		for(int j = 0; j < new_weights_hidden->get_rows(); j++)	{
+			for(int k = 0; k < new_weights_hidden->get_cols(); k++)	{
+				new_weights_hidden->set_value(j, k, matrix_former->get_value(j, k) - delta_weights->get_value(j, k));
+			}
+		}
+		grad = new matrix(derived_gradient->get_rows(), derived_gradient->get_cols(), false);
+		for(int j = 0; j < derived_gradient->get_rows(); j++)	{
+			for(int k = 0; k < derived_gradient->get_cols(); k++)	{
+				grad->set_value(j, k, derived_gradient->get_value(j, k));
+			}
+		}
+		new_weights.push_back(new_weights_hidden);
 	}
 	reverse(new_weights.begin(),new_weights.end());
 	this->weights = new_weights;
