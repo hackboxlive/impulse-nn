@@ -18,6 +18,7 @@ class network	{
 		void set_input(vector<double> input);
 		void print_network();
 		void feed_forward();
+		void back_propagation();
 		void set_errors();
 
 		void set_target(vector<double> target)	{
@@ -58,6 +59,7 @@ class network	{
 		vector<int> topology;
 		vector<layer *> layers;
 		vector<matrix *> weights;
+		vector<matrix *> gradient;
 		vector<double> input;
 		vector<double> errors;
 		double error;

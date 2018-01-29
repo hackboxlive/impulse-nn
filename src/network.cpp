@@ -86,3 +86,14 @@ void network::set_errors()	{
 	}
 	error_history.push_back(this->error);
 }
+
+void network::back_propagation()	{
+	matrix *derived_y_to_z = this->layers[this->layers.size() - 1]->vector_to_derived_matrix();
+	matrix *gradient_y_to_z = new matrix(1, this->layers[this->layers.size() - 1]->get_neurons().size());
+	for(int i = 0; i < this->errors.size(); i++)	{
+		double d = derived_y_to_z->get_value(0, i);
+		double e = this->errors[i];
+		double g = d * e;
+		gradient_y_to_z->set_value(0, i, g);
+	}//output to hidden layer gradient
+}
