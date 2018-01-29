@@ -114,6 +114,22 @@ void network::back_propagation()	{
 			grad->set_value(i, j, gradient_y_to_z->get_value(i, j));
 		}
 	}
+	for(int i = last_hidden_layer_id; i > 0; i--)	{
+		layer *l = this->layers[i];
+		matrix *derived_hidden = l->vector_to_derived_matrix();
+		matrix *activated_hidden = l->vector_to_activated_matrix();
+		matrix *derived_gradient = new matrix(1, l->get_neurons().size(), false);
+		matrix *matrix_latter = this->weights[i];
+		matrix *matrix_former = this->weights[i - 1];
+		for(int j = 0; j < matrix_latter->get_rows(); j++)	{
+			double sum = 0.0;
+			for(int k = 0; k < matrix_latter->get_cols(); k++)	{
+				sum += grad->get_value(0, k) * matrix_latter->get_value(j,k);
+			}
+			derived_gradient->set_value(0, j, sum * activated_hidden->get_value(0, j));
+		}
+
+	}
 	reverse(new_weights.begin(),new_weights.end());
 	this->weights = new_weights;
 }
