@@ -88,12 +88,32 @@ void network::set_errors()	{
 }
 
 void network::back_propagation()	{
-	matrix *derived_y_to_z = this->layers[this->layers.size() - 1]->vector_to_derived_matrix();
-	matrix *gradient_y_to_z = new matrix(1, this->layers[this->layers.size() - 1]->get_neurons().size());
+	vector<matrix *> new_weights;
+	matrix *grad;
+	//output to hidden
+	int output_layer_id = this->layers.size() - 1;
+	matrix *derived_y_to_z = this->layers[output_layer_id]->vector_to_derived_matrix();
+	matrix *gradient_y_to_z = new matrix(1, this->layers[output_layer_id]->get_neurons().size(), false);
 	for(int i = 0; i < this->errors.size(); i++)	{
-		double d = derived_y_to_z->get_value(0, i);
-		double e = this->errors[i];
-		double g = d * e;
-		gradient_y_to_z->set_value(0, i, g);
-	}//output to hidden layer gradient
+		gradient_y_to_z->set_value(0, i, derived_y_to_z->get_value(0, i)*(this->errors[i]));
+	}
+	int last_hidden_layer_id = output_layer_id - 1;
+	layer *last_hidden_layer = this->layers[last_hidden_layer_id];
+	matrix *weights_output_to_hidden = this->weights[last_hidden_layer_id];
+	matrix *delta_output_to_hidden = (new utils::matrix_multiplication(gradient_y_to_z->transpose(), last_hidden_layer->vector_to_activated_matrix()))->execute()->transpose();
+	matrix *new_weights_output_to_hidden = new matrix(delta_output_to_hidden->get_rows(), delta_output_to_hidden->get_cols(), false);
+	for(int i = 0; i < delta_output_to_hidden->get_rows(); i++)	{
+		for(int j = 0; j < delta_output_to_hidden->get_cols(); j++)	{
+			new_weights_output_to_hidden->set_value(i, j, weights_output_to_hidden->get_value(i, j) - delta_output_to_hidden->get_value(i, j));
+		}
+	}
+	new_weights.push_back(new_weights_output_to_hidden);
+	grad = new matrix(gradient_y_to_z->get_rows(), gradient_y_to_z->get_cols(), false);
+	for(int i = 0; i < gradient_y_to_z->get_rows(); i++)	{
+		for(int j = 0; j < gradient_y_to_z->get_cols(); j++)	{
+			grad->set_value(i, j, gradient_y_to_z->get_value(i, j));
+		}
+	}
+	reverse(new_weights.begin(),new_weights.end());
+	this->weights = new_weights;
 }
